@@ -1,0 +1,117 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.row,
+.row-score,
+.clearfix,
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.container{
+    width: 306px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.row{
+
+}
+.row:last-child{
+    margin-bottom: 5px;
+}
+.col{
+    width: 25px;
+    height: 25px;
+    margin: 5px 0 0 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: burlywood;
+    border: 1px solid #0c1996;
+    float: left;
+}
+.col:last-child{
+    margin-right: 5px;
+}
+div.col.snake{
+    background-color: #a8e192;
+}
+div.col.head-top,
+div.col.head-right,
+div.col.head-bottom,
+div.col.head-left{
+    background-color: #ff7170;
+}
+
+div.col.head-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+div.col.head-right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div.col.head-bottom{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div.col.head-left{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+div.col.apple{
+    border-radius: 50%;
+    background-color: #fffe94;
+}
+.row-score{
+    border: 1px dashed #0c1996;
+    width: 306px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: Calibri, "Arial Black", sans-serif;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.row-score .label span{
+    font-weight: bold;
+}
+.pause{
+    text-transform: uppercase;
+    font-family: Calibri, "Arial Black", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    width: 70px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: pause 3s ease-in-out infinite;
+}
+@keyframes pause {
+    0%{
+        opacity: 0.2;
+     }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
